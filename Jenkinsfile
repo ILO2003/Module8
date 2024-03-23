@@ -22,14 +22,14 @@ pipeline {
         stage("build image") {
             steps {
                 script {
-                    gv.buildImage
+                    gv.buildImage()
                 }
             }
         }
          stage("deploy") {
             steps {
                 script {
-                    echo "deploying the application ..."
+                    gv.deployApp()
                 }
             }
         }

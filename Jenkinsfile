@@ -5,9 +5,6 @@ pipeline {
             steps {
                 script{
                     echo 'Testing the application ....'
-                    echo 'Testing the integration second time ....'
-                    echo 'Testing the integration third time ....'
-                    echo 'Testing the integration fourthh time ....'
                 }
             }
         }

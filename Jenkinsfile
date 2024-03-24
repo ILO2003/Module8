@@ -21,10 +21,12 @@ pipeline {
                 }
             }
         }
-        stage("build image") {
+        stage("build image and push image") {
             steps {
                 script {
-                buildImage 'ilo2003/testing:jma-3.0'
+                    buildImage 'ilo2003/testing:jma-3.0'
+                    dockerLogin()
+                    dockerPush 'ilo2003/testing:jma-3.0'
                 }
             }
         }

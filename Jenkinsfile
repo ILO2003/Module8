@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script{
                     echo 'Testing the application ....'
-                    echo 'Testing the integration ....'
+                    echo 'Testing the integration second time ....'
                     echo "Executing pipeline for branch $BRANCH_NAME"
                 }
             }
